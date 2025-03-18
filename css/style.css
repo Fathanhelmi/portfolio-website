@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+
+    --primaryIconColor: #7e74f1;
+    --primaryIconColorHover: #5d51e8;
+
+    --sectionPadding: 6rem 0;
+
+    --itemBorderRadius: 0.7rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: var(--primaryTextColor);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p,
+span,
+label,
+label,
+input,
+textarea,
+li {
+    color: var(--secondaryTextColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.8rem 1.3rem;
+    background-color: var(--primaryTextColor);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    border: none;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.nav {
+    position: fixed;
+    z-index: 30;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: rgb(215 215 215) 10px 5px 21px 0px;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.toggle-burger .line-1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.toggle-burger .line-2 {
+    opacity: 0;
+}
+
+.toggle-burger .line-3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo a {
+    color: var(--primaryTextColor);
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+}
+
+.burger {
+    display: none;
+}
+.burger .bar {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+}
+
+section#hero {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 450px;
+}
+
+.hero-right {
+    width: 40%;
+}
+
+.hero-name {
+    font-size: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    margin: auto;
+}
+
+#hero {
+    margin-bottom: 2rem;
+}
+
+#hero h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+.hero-subtitle {
+    color: var(--secondaryTextColor);
+    font-weight: 300;
+}
+
+#hero p {
+    padding: 1rem 0;
+}
+
+#hero .btn {
+    background-color: var(--primaryTextColor);
+    color: white;
+}
+
+#hero .btn:hover {
+    box-shadow: var(--primaryTextColor) 1px 4px 8px;
+    transition: 0.2s ease-in-out;
+}
+section {
+    padding-top: 100px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31%;
+    min-width: 250px;
+    border: 1.5px solid var(--borderColor);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-image {
+    width: 100%;
+    min-width: 230px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-tags {
+    display: flex;
+    margin: 0.3rem 0;
+}
+
+.card-tags div {
+    color: var(--primaryTextColor);
+    margin-right: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education-info {
+    margin-bottom: 2rem;
+}
+
+.education-years {
+    font-size: 0.8rem;
+}
+
+.education-info li {
+    margin-left: 2rem;
+}
+
+.contact-left {
+    width: 60%;
+    min-width: 442px;
+    margin-right: 0.5rem;
+}
+
+.contact-right {
+    width: 35%;
+}
+
+.contact-left .btn {
+    width: 100%;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: var(--primaryTextColor);
+    color: white;
+}
+
+.btn:hover {
+    box-shadow: var(--primaryTextColor) 1px 4px 8px;
+    transition: 0.2s ease-in-out;
+}
+
+textarea,
+input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: var(--borderColor);
+    border-radius: 0.3rem;
+    resize: none;
+}
+
+.contact-left div {
+    margin: 1rem 0;
+}
+
+input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.contact-item {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+
+    html {
+        font-size: 15px;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgb(215 215 215) 10px -5px 21px 0px;
+    padding: 1rem 0;
+    margin-top: 6rem;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-icons a svg {
+    color: var(--primaryTextColor);
+    width: 1.5rem;
+}
+@media screen and (max-width: 900px) {
+    #hero {
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero-left {
+        width: 100%;
+        min-width: fit-content;
+    }
+    .hero-right {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .cards {
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+        position: fixed;
+        width: 40%;
+        right: 0;
+        top: 4.6rem;
+        flex-direction: column;
+        background-color: white;
+        z-index: 40;
+        transform: translateX(100%);
+        transition: 0.2s ease-in-out;
+        box-shadow: 10px 10px 21px 0px rgba(186, 186, 186, 1);
+        border-radius: 0.2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        z-index: 50;
+    }
+    .nav-active {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-left,
+    .contact-right {
+        margin: 0;
+        width: 100%;
+        min-width: fit-content;
+    }
+    .contact-left {
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        min-width: fit-content;
+    }
+    .card-image {
+        min-width: fit-content;
+    }
+    html {
+        font-size: 13px;
+    }
+}
